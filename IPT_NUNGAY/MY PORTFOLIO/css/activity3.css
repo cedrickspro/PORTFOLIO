@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Header Section with Center-Aligned Title and Profile Box at Top Right */
+.header {
+    display: flex;
+    justify-content: space-between; /* Profile box on the right */
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    width: 70%; /* Takes 70% of the width */
+    text-align: center; /* Ensures title is centered */
+}
+
+.profile-box {
+    width: 100px;
+    height: 100px;
+    background-color: #f2f2f2;
+    border: 2px solid #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+}
+
+/* Section Titles (Centered) */
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid black;
+    text-align: center; /* Center the section titles */
+    width: 100%;
+}
+
+/* Divider */
+.divider {
+    height: 6px;  /* Thicker divider */
+    background: black;
+    margin: 30px 0;
+}
+
+/* Form Group Styles */
+.form-group {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.form-group label {
+    width: 40%;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.form-group span {
+    border-bottom: 1px solid #000;
+    flex: 1;
+    padding-left: 5px;
+    font-size: 14px;
+    height: 22px;
+    line-height: 22px;
+}
+
+/* Signature Section */
+.signature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.signature label {
+    font-weight: bold;
+    width: 30%;
+}
+
+.signature span {
+    flex: 1;
+    border-bottom: 1px solid #000;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 5px;
+}
+
+/* Container Elements: Make Sure Everything is Aligned Properly */
+.section {
+    margin-bottom: 30px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-box {
+        margin-top: 10px;
+        position: static; /* Position reset for smaller screens */
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-group label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .form-group span {
+        width: 100%;
+    }
+}
